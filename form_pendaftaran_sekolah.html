@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulir Pendaftaran Sekolah</title>
+</head>
+<body bgcolor="#F4F6F9" text="#333333">
+    <!-- TABEL UTAMA UNTUK MEMBUNGKUS DAN MENGATUR POSISI DI TENGAH -->
+    <table align="center" width="700" bgcolor="#FFFFFF" border="0" cellpadding="20" cellspacing="0">
+        <tr>
+            <td>
+                <!-- LOGO / GAMBAR SEKOLAH -->
+                <p align="center">
+                    <img src="image/sekolah.jpe" alt="Logo Sekolah" width="120" height="120">
+                </p>
+                <!-- JUDUL UTAMA -->
+                <p align="center">
+                    <font face="Arial" size="5" color="#1E3A8A">
+                        <b>FORMULIR PENDAFTARAN SISWA BARU</b>
+                    </font>
+                </p>
+                <!-- LINK INFORMASI SEKOLAH -->
+                <p align="center">
+                    <font face="Arial" size="2">
+                        <a href="https://example.com/brosur-sekolah.pdf" target="_blank">Download Brosur Sekolah</a> | 
+                        <a href="https://maps.google.com" target="_blank">Lihat Lokasi Sekolah</a>
+                    </font>
+                </p>
+                <hr color="#1E3A8A" size="2">
+                <br>
+                <!-- TABEL INFORMASI BIAYA PENDAFTARAN -->
+                <p>
+                    <font face="Arial" size="3" color="#1E3A8A"><b>Rincian Biaya &amp; Jalur Pendaftaran:</b></font>
+                </p>
+                <table border="1" cellpadding="10" cellspacing="0" width="100%" bordercolor="#CBD5E1">
+                    <tr bgcolor="#1E3A8A">
+                        <td align="center"><font face="Arial" color="#FFFFFF"><b>Jalur Pendaftaran</b></font></td>
+                        <td align="center"><font face="Arial" color="#FFFFFF"><b>Biaya Pendaftaran</b></font></td>
+                        <td align="center"><font face="Arial" color="#FFFFFF"><b>Keterangan</b></font></td>
+                    </tr>
+                    <tr bgcolor="#F8FAFC">
+                        <td><font face="Arial">Jalur Prestasi</font></td>
+                        <td align="center"><font face="Arial">Rp 150.000,-</font></td>
+                        <td><font face="Arial">Melampirkan sertifikat/piagam prestasi</font></td>
+                    </tr>
+                    <tr bgcolor="#FFFFFF">
+                        <td><font face="Arial">Jalur Reguler</font></td>
+                        <td align="center"><font face="Arial">Rp 250.000,-</font></td>
+                        <td><font face="Arial">Mengikuti tes seleksi masuk</font></td>
+                    </tr>
+                </table>
+                <br>
+                <!-- FORMULIR ISIAN PENDAFTARAN -->
+                <form action="coba.php" method="post">
+                    <font face="Arial" size="2">
+                        <!-- SEKSI 1 -->
+                        <table width="100%" bgcolor="#EFF6FF" cellpadding="10" cellspacing="0">
+                            <tr>
+                                <td>
+                                    <font size="3" color="#1E3A8A"><b>1. Pilihan Jalur &amp; Jurusan</b></font>
+                                </td>
+                            </tr>
+                        </table>
+                        <p>
+                            Jalur Pendaftaran:<br>
+                            <input type="radio" name="jalur" value="Prestasi"> Jalur Prestasi &nbsp;&nbsp;
+                            <input type="radio" name="jalur" value="Reguler"> Jalur Reguler
+                        </p>
+                        <p>
+                            Pilihan Jurusan:<br>
+                            <select name="jurusan">
+                                <option value="IPA">MIPA (Matematika &amp; IPA)</option>
+                                <option value="IPS">IPS (Ilmu Pengetahuan Sosial)</option>
+                                <option value="Bahasa">Bahasa &amp; Budaya</option>
+                            </select>
+                        </p>
+                        <br>
+                        <!-- SEKSI 2 -->
+                        <table width="100%" bgcolor="#EFF6FF" cellpadding="10" cellspacing="0">
+                            <tr>
+                                <td>
+                                    <font size="3" color="#1E3A8A"><b>2. Data Calon Siswa</b></font>
+                                </td>
+                            </tr>
+                        </table>
+                        <p>
+                            Nama Lengkap:<br>
+                            <input type="text" name="nama_lengkap" size="40" maxlength="50">
+                        </p>
+                        <p>
+                            Nomor Induk Siswa Nasional (NISN):<br>
+                            <input type="text" name="nisn" size="25" maxlength="10">
+                        </p>
+                        <p>
+                            Tanggal Lahir:<br>
+                            <input type="date" name="tanggal_lahir">
+                        <p>
+                            Jenis Kelamin:<br>
+                            <input type="radio" name="jk" value="Laki-Laki"> Laki-Laki &nbsp;&nbsp;
+                            <input type="radio" name="jk" value="Perempuan"> Perempuan
+                        </p>
+                        <br>
+                        <!-- SEKSI 3 -->
+                        <table width="100%" bgcolor="#EFF6FF" cellpadding="10" cellspacing="0">
+                            <tr>
+                                <td>
+                                    <font size="3" color="#1E3A8A"><b>3. Kelengkapan Berkas</b></font>
+                                </td>
+                            </tr>
+                        </table>
+                        <p>
+                            <input type="checkbox" name="berkas_1" value="ijazah"> Fotokopi Ijazah / SKL<br>
+                            <input type="checkbox" name="berkas_2" value="kk"> Fotokopi Kartu Keluarga<br>
+                            <input type="checkbox" name="berkas_3" value="sertifikat"> Piagam / Sertifikat (Khusus Jalur Prestasi)
+                        </p>
+                        <br>
+                        <hr color="#CBD5E1">
+                        <br>
+                        <p align="center">
+                            <input type="submit" value="KIRIM PENDAFTARAN"> &nbsp;&nbsp;
+                            <input type="reset" value="BERSIHKAN FORM">
+                        </p>
+                    </font>
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

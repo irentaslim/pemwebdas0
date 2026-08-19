@@ -1,0 +1,57 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <title>Atribut Tag Form dan Input</title>
+</head>
+<body>
+<font face="Verdana" size="2">
+    <form action="coba.php" method="post">
+        
+        <p>
+            <b>type="text"</b><br>
+            <input type="text" name="teks_ku" size="16" maxlength="20"><br>
+            Textbox nama teks_ku, ukuran 16, maksimal 20 karakter.
+        </p>
+
+        <p>
+            <b>type="password"</b><br>
+            <input type="password" name="password_ku" size="16" maxlength="20"><br>
+            Passwordbox nama password_ku.
+        </p>
+
+        <p>
+            <b>type="radio"</b><br>
+            <input type="radio" name="radio_ku" value="isi_1">Radio 1<br>
+            <input type="radio" name="radio_ku" value="isi_2">Radio 2<br>
+            Jika nama radio berbeda, keduanya tidak dianggap satu pilihan.
+        </p>
+
+        <p>
+            <b>type="checkbox"</b><br>
+            <input type="checkbox" name="cb_1" value="isi_1">Checkbox 1<br>
+            <input type="checkbox" name="cb_2" value="isi_2">Checkbox 2
+        </p>
+
+        <p>
+            <b>type="submit" &amp; type="reset"</b><br>
+            <input type="submit" value="Tombol Submit">
+            <input type="reset" value="Bersihkan"><br>
+            Submit mengirim data ke action; Reset membersihkan isian form.
+        </p>
+
+        <p>
+            <b>type="hidden"</b><br>
+            <input type="hidden" value="data_ku" name="data">
+            Variabel tersembunyi, tidak menampilkan output apa pun.
+        </p>
+
+        <p>
+            <b>type="image"</b><br>
+            <input type="image" src="tombol.gif" height="50" width="120"><br>
+            Image memiliki fungsi sama dengan type submit.
+        </p>
+
+    </form>
+</font>
+</body>
+</html>
